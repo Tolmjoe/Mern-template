@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 ul {
@@ -58,12 +58,13 @@ a:active {
 .body {
     background-color: rgba(29, 35, 57, 0.84);
     padding: 14px;
-    min-height: 100vh;
+    min-height: 90vh;
     font-family: "Century Schoolbook","Times New Roman",serif;
+
 }
 
 .body:hover {
-    background-color: rgba(117, 139, 230, 0.6);
+    background-color: rgba(0, 3, 16, 0.96);
 }
 
 .hub {
@@ -87,7 +88,7 @@ a:active {
 }
 .sublink:hover {
     color: cadetblue;
-    background-color: black;
+    background-color: #5e0707;
 
 }
 
@@ -115,6 +116,7 @@ a:active {
     bottom: 0;
     left: 0;
     width: 100%;
+    padding-bottom: 3px;
 }
 
 .footlink:link {
@@ -144,7 +146,7 @@ a:active {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.54);
-    padding: 60px;
+    padding: 8px;
     border-radius: 15px;
 }
 

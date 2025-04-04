@@ -9,7 +9,7 @@ function Footer(){
           <Link className="footlink" to="/">Check discounted products</Link>
           <Link className="footlink" to="/">Job offers</Link>
           <br className="br"/>
-          &copy; 2025. Mern Commerce
+           &copy; 2025. Mern Commerce
       </div>
       </>
     );
