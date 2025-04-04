@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(106, 139, 207, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 1px;
+    background-color: beige;
+    border: 1px solid transparent;
+    border-radius: 2px 20px 2px 2px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px 2px rgba(66, 6, 6, 0.84), 1px 1px 2px 2px rgba(81, 78, 20, 0.87);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 0 20px 0 20px;
+}
+
+a:link {
+    color: black;
+    font-family: "Malgun Gothic Semilight","Times New Roman",serif;
+}
+
+a:visited {
+    color: black;
+    background-color: darkred;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+a:active {
+    background-color: chocolate;
+    color: rgba(58, 13, 13, 0.77);
+}
+
+.body {
+    background-color: rgba(29, 35, 57, 0.84);
+    padding: 14px;
+    height: 500px;
+    font-family: "Century Schoolbook","Times New Roman",serif;
+}
+
+.body:hover {
+    background-color: rgba(117, 139, 230, 0.6);
+}
+
+.hub {
+    color: darkred;
+    font-family: "Lucida Handwriting", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+}
+
+.hub:hover {
+    color: darkkhaki;
+}
+
+.sublink {
+    display: inline;
+    border-radius: 1px;
+    color: white;
+}
+
+.sublink:link {
+    color: white;
+    padding: 1px;
+}
+.sublink:hover {
+    color: cadetblue;
+    background-color: black;
+
+}
+
+@keyframes swimming {
+    from {
+        transform: translate(0px,260px);
+    }
+    to {
+        transform: translate(-1200px,260px);
+    }
+}
+
+.anim {
+    margin-top: 10px;
+    font-size: 150px;
+    float: right;
+    animation: swimming 4s linear infinite;
+    user-select: none;
+}
+
+.footer {
+    background-color: black;
+    height: 110px;
+}
+
+.footlink:link {
+    color: white;
+}
+.footlink:visited {
+    color: darkred;
+}
+.footlink:hover {
+    color: aqua;
+}
+
+.footlink:active {
+    background-color: transparent;
+}
+
+.footlink {
+    display: block;
+    height: 10px;
+}
+
+
+.login-body, .register-body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.54);
+    padding: 60px;
+    border-radius: 15px;
+}
+
+
+.login-form, .register-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputLogin, .inputRegister {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(9, 1, 23, 0.96);
+    box-shadow: 0 0 0 3px rgba(126, 87, 194, 0.15);
+    background-color: rgba(7, 32, 78, 0.35);
+}
+
+
+.labelLog, .register {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.labelLog:hover, .register:hover {
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
+
+.loginRet, .registerRet {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #5e35b1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.loginRet:hover, .registerRet:hover {
+    color: #311b92;
+}
+
+
+.box {
+    margin-top: 7px;
+    border: 2px solid white;
+    display: inline-flex;
+    width: 125px;
+    padding: 3px;
+
+}
+
+.product {
+    border: 1px solid red;
+    background-color: #451503;
+    padding: 4px;
+}
+
+.products-1 {
+    border: 1px solid green;
+    background-color: #201d01;
+}
