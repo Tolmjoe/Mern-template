@@ -58,7 +58,7 @@ a:active {
 .body {
     background-color: rgba(29, 35, 57, 0.84);
     padding: 14px;
-    height: 500px;
+    min-height: 100vh;
     font-family: "Century Schoolbook","Times New Roman",serif;
 }
 
@@ -93,10 +93,10 @@ a:active {
 
 @keyframes swimming {
     from {
-        transform: translate(0px,260px);
+        transform: translate(0px,370px);
     }
     to {
-        transform: translate(-1200px,260px);
+        transform: translate(-1200px,370px);
     }
 }
 
@@ -111,6 +111,10 @@ a:active {
 .footer {
     background-color: black;
     height: 110px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .footlink:link {
