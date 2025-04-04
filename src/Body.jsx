@@ -13,7 +13,7 @@ function Body() {
             <Products name="Nigerian Gloves" price="#1402" image={im} description="Red worlds"/>
             <Products name="American Gloves" price="#5692" image={im} description="Green worlds"/>
 
-            <div className="anim">🛼</div>
+
         </div>
         </>
     );
