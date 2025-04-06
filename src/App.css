@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: rgba(106, 139, 207, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    max-height: 900px;
 }
 
 ul {
@@ -58,9 +58,8 @@ a:active {
 .body {
     background-color: rgba(29, 35, 57, 0.84);
     padding: 14px;
-    min-height: 90vh;
+    min-height: 100vh;
     font-family: "Century Schoolbook","Times New Roman",serif;
-
 }
 
 .body:hover {
