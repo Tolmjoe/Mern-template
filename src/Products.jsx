@@ -1,9 +1,9 @@
 import "./Products.css"
 
 const categories = [
-    { name: "Electronics", image: "../public/ima6.avif" },
-    { name: "Clothes", image: "../public/ima6.avif" },
-    { name: "Toys", image: "../public/ima6.avif" },
+    { name: "Electronics", image: "/ima6.avif" },
+    { name: "Clothes", image: "/ima6.avif" },
+    { name: "Toys", image: "/ima6.avif" },
 ];
 
 const products = [
@@ -15,19 +15,19 @@ const products = [
     },
     {
         name: "Witch Flower",
-        image: "../public/ima3.avif",
+        image: "/ima3.avif",
         price: "#450,000",
         rating: 3,
     },
     {
         name: "Tree of Life",
-        image: "../public/ima4.avif",
+        image: "/ima4.avif",
         price: "#240,789,897,782",
         rating: 4,
     },
     {
         name: "Plastic Globe",
-        image: "../public/ima5.avif",
+        image: "/ima5.avif",
         price: "#509",
         rating: 5,
     },
