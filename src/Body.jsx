@@ -9,9 +9,7 @@ function Body() {
             Mern Commerce is your Number One <span className="hub">HUB</span> in buying all things green!
             <Link className="sublink" to="/register"> Register </Link> and shop with us today to get a 70% discount off your first purchase!
             <hr/>
-            <Products name="Mexican Gloves" price="#3892" image={im} description="Blue worlds"/>
-            <Products name="Nigerian Gloves" price="#1402" image={im} description="Red worlds"/>
-            <Products name="American Gloves" price="#5692" image={im} description="Green worlds"/>
+            <Products/>
 
 
         </div>

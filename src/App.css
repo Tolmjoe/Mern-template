@@ -90,22 +90,6 @@ a:active {
 
 }
 
-@keyframes swimming {
-    from {
-        transform: translate(0px,-270px);
-    }
-    to {
-        transform: translate(-1200px,-270px);
-    }
-}
-
-.anim {
-    margin-top: 10px;
-    font-size: 150px;
-    float: right;
-    animation: swimming 4s linear infinite;
-    user-select: none;
-}
 
 .footer {
     background-color: black;
@@ -121,7 +105,7 @@ a:active {
     color: white;
 }
 .footlink:visited {
-    color: darkred;
+    color: #ac9610;
 }
 .footlink:hover {
     color: aqua;

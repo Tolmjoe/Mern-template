@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 function Footer(){
     return (
       <>
-          <div className="anim">🛼</div>
       <div className="footer">
 
           <Link className="footlink" to="/">Products and Services</Link>
