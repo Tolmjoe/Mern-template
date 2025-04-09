@@ -9,7 +9,7 @@ const categories = [
 const products = [
     {
         name: "Kafshy Parrot",
-        image: "../public/ima2.avif",
+        image: "/ima2.avif",
         price: "#34,982,798",
         rating: 5,
     },
