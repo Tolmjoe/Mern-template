@@ -1,33 +1,33 @@
 import "./Products.css"
 
 const categories = [
-    { name: "Electronics", image: "src/assets/ima6.avif" },
-    { name: "Clothes", image: "src/assets/ima6.avif" },
-    { name: "Toys", image: "src/assets/ima6.avif" },
+    { name: "Electronics", image: "../public/ima6.avif" },
+    { name: "Clothes", image: "../public/ima6.avif" },
+    { name: "Toys", image: "../public/ima6.avif" },
 ];
 
 const products = [
     {
         name: "Kafshy Parrot",
-        image: "src/assets/ima2.avif",
+        image: "../public/ima2.avif",
         price: "#34,982,798",
         rating: 5,
     },
     {
         name: "Witch Flower",
-        image: "src/assets/ima3.avif",
+        image: "../public/ima3.avif",
         price: "#450,000",
         rating: 3,
     },
     {
         name: "Tree of Life",
-        image: "src/assets/ima4.avif",
+        image: "../public/ima4.avif",
         price: "#240,789,897,782",
         rating: 4,
     },
     {
         name: "Plastic Globe",
-        image: "src/assets/ima5.avif",
+        image: "../public/ima5.avif",
         price: "#509",
         rating: 5,
     },
