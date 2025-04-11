@@ -1,6 +1,5 @@
 import {Link} from "react-router";
 import Products from "./Products.jsx";
-import im from "./assets/react.svg"
 
 function Body() {
     return (
