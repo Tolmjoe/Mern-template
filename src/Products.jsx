@@ -1,11 +1,6 @@
 import "./Products.css"
 import {useEffect, useState} from "react";
 
-const categories = [
-    { name: "Electronics", image: "/electron.jpeg" },
-    { name: "Clothes", image: "/clothes.jpeg" },
-    { name: "Toys", image: "/toys.jpeg" },
-];
 
 const product = [
     {
@@ -37,17 +32,19 @@ const product = [
 
 function Products() {
 
-    const [currentId, setCurrentId] = useState(0);
+    const [electronicIndex, setElectronicIndex] = useState(0);
+    const [clothesIndex, setClothesIndex] = useState(0);
+    const [toysIndex, setToysIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentId((prevId) => (prevId + 1) % categories.length);
-        }, 4000);
-
+            setElectronicIndex((prev) => (prev + 1) % 3);
+            setClothesIndex((prev) => (prev + 1) % 3);
+            setToysIndex((prev) => (prev + 1) % 3);
+        }, 2000);
         return () => clearInterval(interval);
     }, []);
 
-    const current = categories[currentId];
 
     const [products, setProducts] = useState(product);
     const [editIndex, setEditIndex] = useState(null);
@@ -94,11 +91,37 @@ function Products() {
 
 
                     <div className="categories">
-                            <div className="category-card">
-                                <img src={current.image} alt={current.name} />
-                                <div className="category-name">{current.name}</div>
-                            </div>
+
+                        <div className="category-card">
+                            <div className="category-name"><h5>Electronics</h5></div>
+                            <img
+                                key={electronicIndex}
+                                src={
+                                ["/electron.jpeg", "/electron1.jpg", "/electron2.jpg"][electronicIndex]
+                            } alt="Electronics" />
+                        </div>
+
+                        <div className="category-card">
+                            <div className="category-name"><h5>Clothes</h5></div>
+                            <img
+                                key={clothesIndex}
+                                src={
+                                ["/clothes.jpeg", "/clothes1.jpg", "/clothes2.jpg"][clothesIndex]
+                            } alt="Clothes" />
+                        </div>
+
+                        <div className="category-card">
+                            <div className="category-name"><h5>Toys</h5></div>
+                            <img
+                                key={toysIndex}
+                                src={
+                                ["/toys.jpeg", "/toys1.jpg", "/toys2.jpg"][toysIndex]
+                            } alt="Toys" />
+                        </div>
+
                     </div>
+
+
 
 
                     <div className="products">
