@@ -32,16 +32,16 @@ const product = [
 
 function Products() {
 
-    const [electronicIndex, setElectronicIndex] = useState(0);
-    const [clothesIndex, setClothesIndex] = useState(0);
-    const [toysIndex, setToysIndex] = useState(0);
+    const [electronicIndex, setElectronicIndex] = useState(1);
+    const [clothesIndex, setClothesIndex] = useState(1);
+    const [toysIndex, setToysIndex] = useState(1);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setElectronicIndex((prev) => (prev + 1) % 3);
             setClothesIndex((prev) => (prev + 1) % 3);
             setToysIndex((prev) => (prev + 1) % 3);
-        }, 2000);
+        }, 3000);
         return () => clearInterval(interval);
     }, []);
 
@@ -113,6 +113,7 @@ function Products() {
                         <div className="category-card">
                             <div className="category-name"><h5>Toys</h5></div>
                             <img
+                                loading = "lazy"
                                 key={toysIndex}
                                 src={
                                 ["/toys.jpeg", "/toys1.jpg", "/toys2.jpg"][toysIndex]
