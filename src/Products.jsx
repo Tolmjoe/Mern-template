@@ -95,15 +95,19 @@ function Products() {
                         <div className="category-card">
                             <div className="category-name"><h5>Electronics</h5></div>
                             <img
+                                width = "100%"
+                                height = "280"
                                 key={electronicIndex}
                                 src={
-                                ["/electron.jpeg", "/electron1.jpg", "/electron2.jpg"][electronicIndex]
+                                ["/electron.jpeg", "/electron1.jpg", "/electron3.jpg"][electronicIndex]
                             } alt="Electronics" />
                         </div>
 
                         <div className="category-card">
                             <div className="category-name"><h5>Clothes</h5></div>
                             <img
+                                width = "100%"
+                                height = "280"
                                 key={clothesIndex}
                                 src={
                                 ["/clothes.jpeg", "/clothes1.jpg", "/clothes2.jpg"][clothesIndex]
@@ -113,10 +117,11 @@ function Products() {
                         <div className="category-card">
                             <div className="category-name"><h5>Toys</h5></div>
                             <img
-                                loading = "lazy"
+                                width = "100%"
+                                height = "280"
                                 key={toysIndex}
                                 src={
-                                ["/toys.jpeg", "/toys1.jpg", "/toys2.jpg"][toysIndex]
+                                ["/toys.jpeg", "/toys1.jpg", "/toys4.jpg"][toysIndex]
                             } alt="Toys" />
                         </div>
 
