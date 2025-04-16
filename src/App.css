@@ -99,6 +99,7 @@ a:active {
     left: 0;
     width: 100%;
     padding-bottom: 3px;
+    color: white;
 }
 
 .footlink:link {
@@ -221,5 +222,5 @@ input:focus {
 
 .products-1 {
     border: 1px solid green;
-    background-color: #201d01;
+    background-color: #a39405;
 }
