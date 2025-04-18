@@ -76,7 +76,7 @@
 
 
 a:link {
-    color: #ffffff;
+    color: #068e8e;
     font-family: "Poor Richard", "Felix Titling", sans-serif;
 }
 
@@ -227,16 +227,22 @@ input:focus {
     text-align: center;
     display: block;
     margin-top: 20px;
-    color: #5e35b1;
+    color: #f3eded;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    background-color: black;
+    padding: 9px;
 }
 
 .loginRet:hover, .registerRet:hover {
-    color: #311b92;
+    color: #0c0000;
+    background-color: white;
 }
 
+.loginRet:visited, .registerRet:visited {
+    color: #d5725c;
+}
 
 .menumob {
     display: none;
