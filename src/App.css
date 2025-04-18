@@ -18,7 +18,7 @@
 .nav {
     background-color: rgba(87, 21, 21, 0.6);
     border-bottom: 7px solid #1c0606;
-    padding: 6px 10px;
+    padding: 1px 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 70px;
 }
 
 .nav-logoa {
