@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,32 +7,36 @@ import "./Products.css";
 
 const product = [
     {
+        id: 1,
         name: "Kafshy Parrot",
         image: "/ima2.avif",
         price: "\u20A6" + "34,982,798",
         rating: 5,
-        discount: "-40%",
+        discount: "-40%"
     },
     {
+        id: 2,
         name: "Witch Flower",
         image: "/ima3.avif",
         price: "\u20A6" + "450,000",
         rating: 3,
-        discount: "-15%",
+        discount: "-15%"
     },
     {
+        id: 3,
         name: "Tree of Life",
         image: "/ima4.avif",
         price: "\u20A6" + "240,789,897,782",
         rating: 4,
-        discount: "-50%",
+        discount: "-50%"
     },
     {
+        id: 4,
         name: "Plastic Globe",
         image: "/ima5.avif",
         price: "\u20A6" + "5000",
         rating: 5,
-        discount: "-80%",
+        discount: "-80%"
     },
 ];
 
@@ -153,7 +158,8 @@ function Products() {
             <div className="products">
                 {products.map((product, index) => (
                     <div key={index} className="product-card">
-                        <img src={product.image} alt={product.name} />
+                       <Link to={`/product/${product.id}`}><img src={product.image} alt={product.name} />
+                       </Link>
                         <h3>{product.name}</h3>
                         <p className="stars">
                             {"★".repeat(product.rating)}{"☆".repeat(5 - product.rating)}

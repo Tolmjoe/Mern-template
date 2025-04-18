@@ -1,0 +1,97 @@
+.prodallBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #000000;
+}
+
+.prodall-image {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.prodall-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.prodall-info {
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.prodall-info h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.pi-price {
+    font-size: 1.6rem;
+    color: #e53935;
+    margin-bottom: 1rem;
+}
+
+.pi-discount {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: line-through;
+    margin-left: 1rem;
+}
+
+.stars {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.specs,
+.delivery,
+.seller {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.reviews ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+.reviews li {
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+.cartButton {
+    background-color: #8a0920;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cartButton:hover {
+    background-color: #02430d;
+}
