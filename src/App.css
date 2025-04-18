@@ -234,7 +234,7 @@ input:focus {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.62);
     padding: 9px;
 }
 
