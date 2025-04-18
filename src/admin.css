@@ -60,3 +60,68 @@
 button:hover {
     background-color: #45a049;
 }
+
+/*users*/
+
+.userSearch {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.userBack {
+    overflow-x: auto;
+}
+
+.user {
+    width: 100%;
+    border-collapse: collapse;
+    background: #e6dcdc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user th, .user td {
+    padding: 4px 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.user th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.tableBtn {
+    padding: 3px 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    width: 50px;
+}
+
+.tableBtn.view {
+    background-color: #3748bc;
+    color: white;
+}
+
+.tableBtn.edit {
+    background-color: #ff0724;
+    color: white;
+}
+
+.tableBtn.delete {
+    background-color: #000000;
+    color: white;
+}
+
+.tableBtn:hover {
+    opacity: 0.8;
+}
+
+

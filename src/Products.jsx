@@ -1,58 +1,48 @@
-import "./Products.css"
-import {useEffect, useState} from "react";
-
+import React, { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Products.css";
 
 const product = [
     {
         name: "Kafshy Parrot",
         image: "/ima2.avif",
-        price: "#34,982,798",
+        price: "\u20A6" + "34,982,798",
         rating: 5,
+        discount: "-40%",
     },
     {
         name: "Witch Flower",
         image: "/ima3.avif",
-        price: "#450,000",
+        price: "\u20A6" + "450,000",
         rating: 3,
+        discount: "-15%",
     },
     {
         name: "Tree of Life",
         image: "/ima4.avif",
-        price: "#240,789,897,782",
+        price: "\u20A6" + "240,789,897,782",
         rating: 4,
+        discount: "-50%",
     },
     {
         name: "Plastic Globe",
         image: "/ima5.avif",
-        price: "#509",
+        price: "\u20A6" + "5000",
         rating: 5,
+        discount: "-80%",
     },
 ];
 
-
 function Products() {
-
-    const [electronicIndex, setElectronicIndex] = useState(1);
-    const [clothesIndex, setClothesIndex] = useState(1);
-    const [toysIndex, setToysIndex] = useState(1);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setElectronicIndex((prev) => (prev + 1) % 3);
-            setClothesIndex((prev) => (prev + 1) % 3);
-            setToysIndex((prev) => (prev + 1) % 3);
-        }, 3000);
-        return () => clearInterval(interval);
-    }, []);
-
-
     const [products, setProducts] = useState(product);
     const [editIndex, setEditIndex] = useState(null);
     const [newProductData, setNewProductData] = useState({
         name: "",
         price: "",
         rating: "",
-        image: ""
+        image: "",
     });
 
     const editFuct = (index) => {
@@ -62,7 +52,7 @@ function Products() {
             name: product.name,
             price: product.price,
             rating: product.rating,
-            image: product.image
+            image: product.image,
         });
     };
 
@@ -78,105 +68,138 @@ function Products() {
         setEditIndex(null);
     };
 
+    const slideImages = {
+        electronics: ["/electron1.jpg", "/electron2.jpg", "/electron3.jpg"],
+        clothes: ["/clothes1.jpg", "/clothes2.jpg", "/clothes3.jpg"],
+        toys: ["/toys1.jpg", "/toys2.jpg", "/toys3.jpg"],
+    };
+
+    const setCarousel = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
     return (
-            <>
+        <div className="body-prod">
+            <div className="back-shop">
+                <div className="back-text">
+                    <h1>Welcome to Mern Store</h1>
+                    <p>You can buy quality products ranging from clothes, electronics, toys, and more</p>
+                </div>
+            </div>
 
-                <div className="body-prod">
-                    <div className="back-shop">
-                        <div className="back-text">
-                            <h1>Welcome to Mern Store</h1>
-                            <p>You can buy quality products ranging from clothes, electronics, toys, and more</p>
-                        </div>
+            <div className="categories">
+                <div className="category-card">
+                    <div className="category-name">
+                        <h5>Electronics</h5>
                     </div>
-
-
-                    <div className="categories">
-
-                        <div className="category-card">
-                            <div className="category-name"><h5>Electronics</h5></div>
-                            <img
-                                width = "100%"
-                                height = "280"
-                                key={electronicIndex}
-                                src={
-                                ["/electron.jpeg", "/electron1.jpg", "/electron3.jpg"][electronicIndex]
-                            } alt="Electronics" />
-                        </div>
-
-                        <div className="category-card">
-                            <div className="category-name"><h5>Clothes</h5></div>
-                            <img
-                                width = "100%"
-                                height = "280"
-                                key={clothesIndex}
-                                src={
-                                ["/clothes.jpeg", "/clothes1.jpg", "/clothes2.jpg"][clothesIndex]
-                            } alt="Clothes" />
-                        </div>
-
-                        <div className="category-card">
-                            <div className="category-name"><h5>Toys</h5></div>
-                            <img
-                                width = "100%"
-                                height = "280"
-                                key={toysIndex}
-                                src={
-                                ["/toys.jpeg", "/toys1.jpg", "/toys4.jpg"][toysIndex]
-                            } alt="Toys" />
-                        </div>
-
-                    </div>
-
-
-
-
-                    <div className="products">
-                        {products.map((product, index) => (
-                            <div key={index} className="product-card">
-                                <img src={product.image} alt={product.name} />
-                                <h3>{product.name}</h3>
-                                <p className="stars">{"★".repeat(product.rating)}{"☆".repeat(5 - product.rating)}</p>
-                                <p className="price">{product.price}</p>
-                                <button>Add to Cart</button>
-                                <button className="adminA" onClick={() => editFuct(index)}>Edit</button>
-                                <button className="adminB" onClick={() => console.log("Dont")}>Delete</button>
-
-                                {editIndex === index && (
-                                    <div>
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            value={newProductData.name}
-                                            onChange={changeFuct}
-                                        />
-                                        <input
-                                            type="text"
-                                            name="price"
-                                            value={newProductData.price}
-                                            onChange={changeFuct}
-                                        />
-                                        <input
-                                            type="number"
-                                            name="rating"
-                                            value={newProductData.rating}
-                                            onChange={changeFuct}
-                                            min="1"
-                                            max="5"
-                                        />
-                                        <input
-                                            type="file"
-                                            /*working on this*/
-                                        />
-                                        <button className="adminS" onClick={saveFuct}>Save</button>
-                                    </div>
-                                    )}
+                    <Slider {...setCarousel}>
+                        {slideImages.electronics.map((image, index) => (
+                            <div key={index}>
+                                <img width="100%" height="280" src={image} alt="Electronics" />
                             </div>
                         ))}
-                    </div>
+                    </Slider>
                 </div>
-            </>
+
+                <div className="category-card">
+                    <div className="category-name">
+                        <h5>Clothes</h5>
+                    </div>
+                    <Slider {...setCarousel}>
+                        {slideImages.clothes.map((image, index) => (
+                            <div key={index}>
+                                <img width="100%" height="280" src={image} alt="Clothes" />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+
+                <div className="category-card">
+                    <div className="category-name">
+                        <h5>Toys</h5>
+                    </div>
+                    <Slider {...setCarousel}>
+                        {slideImages.toys.map((image, index) => (
+                            <div key={index}>
+                                <img width="100%" height="280" src={image} alt="Toys" />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </div>
+            <h5 className="productsHeading"> Latest Products</h5>
+            <div className="products">
+                {products.map((product, index) => (
+                    <div key={index} className="product-card">
+                        <img src={product.image} alt={product.name} />
+                        <h3>{product.name}</h3>
+                        <p className="stars">
+                            {"★".repeat(product.rating)}{"☆".repeat(5 - product.rating)}
+                        </p>
+                        <p className="price">{product.price}<span className="discount">{product.discount}</span></p>
+                        <button>Add to Cart</button>
+                        <button className="adminA" onClick={() => editFuct(index)}>
+                            Edit
+                        </button>
+                        <button className="adminB" onClick={() => console.log("Dont")}>
+                            Delete
+                        </button>
+
+                        {editIndex === index && (
+                            <div>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    value={newProductData.name}
+                                    onChange={changeFuct}
+                                />
+                                <input
+                                    type="text"
+                                    name="price"
+                                    value={newProductData.price}
+                                    onChange={changeFuct}
+                                />
+                                <input
+                                    type="number"
+                                    name="rating"
+                                    value={newProductData.rating}
+                                    onChange={changeFuct}
+                                    min="1"
+                                    max="5"
+                                />
+                                <input type="file" />
+                                <button className="adminS" onClick={saveFuct}>
+                                    Save
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 }
-
 
 export default Products;

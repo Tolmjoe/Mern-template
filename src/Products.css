@@ -44,8 +44,7 @@
 
 
 .category-card {
-    flex: 1 1 300px;
-    max-width: 350px;
+    width: calc(33% - 20px);
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -55,26 +54,50 @@
 }
 
 .category-card img {
-
     object-fit: cover;
     border-radius: 8px;
-    animation: slide 0.6s ease-in-out;
 }
 
-@keyframes slide {
-    from {
-        transform: translateX(30%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0%);
-        opacity: 1;
-    }
+.slick-slide {
+    transition: all 0.5s ease-in-out;
+}
+.slick-slide img {
+    opacity: 0.8;
+}
+.slick-current img {
+    opacity: 1;
+    transform: scale(1.23);
+}
+
+.slick-dots {
+    bottom: 1px;
+}
+.slick-dots li button:before {
+    font-size: 8px;
+    color: rgb(177, 155, 161);
+    opacity: 0.6;
+}
+.slick-dots li.slick-active button:before {
+    color: #590211;
+    opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 5;
+    width: 25px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 20px;
+    color: rgba(101, 23, 23, 0.66);
+    opacity: 1;
 }
 
 
 .category-name {
-    padding: 5px;
+    padding: 3px;
     font-weight: 600;
 }
 
@@ -86,6 +109,13 @@
     margin-bottom: 100px;
 }
 
+.productsHeading {
+    color: white;
+    text-align: center;
+    background-color: rgba(57, 22, 22, 0.46);
+    padding: 10px;
+    font-family: "Felix Titling", sans-serif;
+}
 .product-card {
     background: white;
     border: 1px solid #ddd;
@@ -100,9 +130,9 @@
 }
 
 .product-card img {
-    height: 140px;
+    height: 200px !important;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
@@ -117,33 +147,44 @@
 }
 
 .price {
-    font-size: 18px;
-    font-weight: bold;
+    font-weight: 549;
     margin-bottom: 10px;
+    margin-left: 46px;
+}
+
+.discount {
+    float: right;
+    font-size: 9px;
+    background-color: rgba(205, 174, 174, 0.29);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #a80606;
 }
 
 .product-card button {
-    background-color: #ecc712;
+    background-color: #f6ce02;
     border: none;
     padding: 8px 15px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.2s ease;
 }
 
 .product-card button:hover {
-    background-color: #9a7d05;
+    background-color: #403402;
+    color: whitesmoke;
+    transition: background-color 0.2s ease;
 }
 
 
 .adminA {
-    background-color: red !important;
+    background-color: rgba(255, 0, 0, 0.6) !important;
     margin-left: 3px;
 }
 
 .adminB {
-    background-color: purple !important;
+    background-color: rgba(128, 0, 128, 0.62) !important;
     margin-left: 3px;
 
 }
@@ -158,50 +199,102 @@
 
 
 
+/*resp*/
 
-
-
-
-
-
-
-@media (max-width: 768px) {
-
-    .product-card h3 {
-        font-size: 14px;
+@media screen and (max-width: 768px) {
+    .back-shop {
+        height: 180px;
+        background-position: center;
     }
 
-    .price {
-        font-size: 16px;
+
+    .category-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 10px;
+        padding: 10px;
     }
 
     .product-card img {
         height: 100px;
     }
 
-    .category-card img {
-        height: 100px;
+    .product-card h3 {
+        font-size: 14px;
+    }
+
+    .price {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .discount {
+        font-size: 8px;
+    }
+
+    .product-card button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .productsHeading {
+        font-size: 16px;
+        padding: 8px;
     }
 }
 
-@media (max-width: 480px) {
-
-    .back-shop {
-        margin-top: 5px;
+@media screen and (max-width: 480px) {
+    .category-card {
+        width: 100% !important;
     }
 
-    .categories,
+    .back-text {
+        padding: 12px;
+    }
+
+    .back-text h1 {
+        font-size: 18px;
+    }
+
+    .back-text p {
+        font-size: 13px;
+    }
+
     .products {
-        padding: 15px;
-        gap: 15px;
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 
     .product-card {
         padding: 10px;
     }
 
+    .product-card img {
+        height: 90px;
+    }
+
+    .product-card h3 {
+        font-size: 13px;
+    }
+
     .product-card button {
-        padding: 6px 10px;
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .stars {
+        font-size: 12px;
+    }
+
+    .discount {
+        font-size: 7px;
     }
 }
+
+
+
+
+
