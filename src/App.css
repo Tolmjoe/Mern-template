@@ -16,7 +16,7 @@
 }
 
 .nav {
-    background-color: rgba(166, 112, 112, 0.95);
+    background-color: rgba(87, 21, 21, 0.6);
     border-bottom: 7px solid #1c0606;
     padding: 6px 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -76,8 +76,9 @@
 
 
 a:link {
-    color: #068e8e;
+    color: rgba(203, 216, 216, 0);
     font-family: "Poor Richard", "Felix Titling", sans-serif;
+    text-decoration: none;
 }
 
 a:visited {
@@ -137,6 +138,8 @@ a:visited {
 
 .footlink:link {
     color: white;
+    margin-bottom: 5px;
+    margin-left: 7px;
 }
 .footlink:visited {
     color: #ac9610;
@@ -304,6 +307,9 @@ input:focus {
 }
 
 @media screen and (max-width: 480px) {
+    .nav {
+        position: static;
+    }
 
     .nav-logoa {
         font-size: 1.1rem;

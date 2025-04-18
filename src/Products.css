@@ -149,11 +149,10 @@
 .price {
     font-weight: 549;
     margin-bottom: 10px;
-    margin-left: 46px;
 }
 
 .discount {
-    float: right;
+    margin-left: 10px;
     font-size: 9px;
     background-color: rgba(205, 174, 174, 0.29);
     border: 1px solid transparent;
