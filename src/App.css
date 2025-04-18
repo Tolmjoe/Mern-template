@@ -78,10 +78,11 @@
 a:link {
     font-family: "Poor Richard", "Felix Titling", sans-serif;
     text-decoration: none;
+    color: rgb(35, 25, 1);
 }
 
 a:visited {
-    color: rgb(41, 29, 1);
+    color: rgb(12, 0, 0);
 }
 
 
