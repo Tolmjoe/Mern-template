@@ -1,5 +1,5 @@
 import {Link} from "react-router";
-import Products from "./Products.jsx";
+import Products from "../components/Products.jsx";
 
 function Body() {
     return (

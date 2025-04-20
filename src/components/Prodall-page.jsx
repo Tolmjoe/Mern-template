@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "./prodall-page.css"
+import "../stylesheets/prodall-page.css"
 
 function Prodall() {
     const { id } = useParams();
@@ -9,7 +9,7 @@ function Prodall() {
         {
             id: 1,
             name: "Kafshy Parrot",
-            image: "/ima2.avif",
+            image: "/public/images/ima2.avif",
             price: "₦34,982,798",
             rating: 5,
             discount: "-40%",
@@ -22,7 +22,7 @@ function Prodall() {
         {
             id: 2,
             name: "Witch Flower",
-            image: "/ima3.avif",
+            image: "/public/images/ima3.avif",
             price: "₦450,000",
             rating: 3,
             discount: "-15%",
@@ -35,7 +35,7 @@ function Prodall() {
         {
             id: 3,
             name: "Tree of Life",
-            image: "/ima4.avif",
+            image: "/public/images/ima4.avif",
             price: "₦240,789,897,782",
             rating: 4,
             discount: "-50%",
@@ -48,7 +48,7 @@ function Prodall() {
         {
             id: 4,
             name: "Plastic Globe",
-            image: "/ima5.avif",
+            image: "/public/images/ima5.avif",
             price: "₦5000",
             rating: 5,
             discount: "-80%",

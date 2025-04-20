@@ -1,6 +1,6 @@
 import {Link} from "react-router";
 import { useState } from "react";
-import "./admin.css"
+import "../stylesheets/admin.css"
 
 
 function Admin() {

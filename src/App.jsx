@@ -1,10 +1,10 @@
 import { BrowserRouter as Router,Routes, Route} from "react-router-dom"
-import HomePage from "./home.jsx"
-import LoginPage from "./login.jsx"
-import RegisterPage from "./register.jsx"
-import Admin from "./admin.jsx"
-import Prodall from "./products-pages/Prodall-page.jsx"
-import './App.css'
+import HomePage from "./pages/home.jsx"
+import LoginPage from "./pages/login.jsx"
+import RegisterPage from "./pages/register.jsx"
+import Admin from "./pages/admin.jsx"
+import Prodall from "./components/Prodall-page.jsx"
+import './stylesheets/App.css'
 
 
 function App() {

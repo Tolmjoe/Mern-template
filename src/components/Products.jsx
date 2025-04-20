@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Products.css";
+import "../stylesheets/Products.css";
 
 const product = [
     {
         id: 1,
         name: "Kafshy Parrot",
-        image: "/ima2.avif",
+        image: "/public/images/ima2.avif",
         price: "\u20A6" + "34,982,798",
         rating: 5,
         discount: "-40%"
@@ -17,7 +17,7 @@ const product = [
     {
         id: 2,
         name: "Witch Flower",
-        image: "/ima3.avif",
+        image: "/public/images/ima3.avif",
         price: "\u20A6" + "450,000",
         rating: 3,
         discount: "-15%"
@@ -25,7 +25,7 @@ const product = [
     {
         id: 3,
         name: "Tree of Life",
-        image: "/ima4.avif",
+        image: "/public/images/ima4.avif",
         price: "\u20A6" + "240,789,897,782",
         rating: 4,
         discount: "-50%"
@@ -33,7 +33,7 @@ const product = [
     {
         id: 4,
         name: "Plastic Globe",
-        image: "/ima5.avif",
+        image: "/public/images/ima5.avif",
         price: "\u20A6" + "5000",
         rating: 5,
         discount: "-80%"
@@ -74,9 +74,9 @@ function Products() {
     };
 
     const slideImages = {
-        electronics: ["/electron1.jpg", "/electron2.jpg", "/electron3.jpg"],
-        clothes: ["/clothes1.jpg", "/clothes2.jpg", "/clothes3.jpg"],
-        toys: ["/toys1.jpg", "/toys2.jpg", "/toys3.jpg"],
+        electronics: ["/public/images/electron1.jpg", "/public/images/electron2.jpg", "/public/images/electron3.jpg"],
+        clothes: ["/public/images/clothes1.jpg", "/public/images/clothes2.jpg", "/public/images/clothes3.jpg"],
+        toys: ["/public/images/toys1.jpg", "/public/images/toys2.jpg", "/public/images/toys3.jpg"],
     };
 
     const setCarousel = {

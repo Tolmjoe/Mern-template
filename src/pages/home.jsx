@@ -1,6 +1,6 @@
-import Header from "./Header.jsx";
-import Footer from "./Footer.jsx";
-import Body from "./Body.jsx";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import Body from "./body.jsx";
 
 
 function HomePage() {
