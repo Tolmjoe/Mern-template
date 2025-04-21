@@ -279,7 +279,7 @@ input:focus {
         background-color: rgba(195, 153, 153, 0.49);
         margin-left: 9px;
         border-radius: 0;
-        font-size: 36px;
+        font-size: 20px;
     }
 
     .login-form, .register-form {
@@ -337,4 +337,22 @@ input:focus {
         font-size: 12px;
         padding: 15px 5px;
     }
+}
+
+.search {
+    float: right;
+    margin-right: 5px;
+    width: 200px; height: 35px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+}
+
+.searchBack {
+    background-color: #201301;
+    height: 40px;
+    margin-bottom: 1px;
+    color: white;
 }

@@ -20,7 +20,7 @@ function Admin() {
             <label className="lal" htmlFor="name">Input Name of Item</label>
             <input className="inp"/>
             <label className="lal" htmlFor="name">Input Category of Item</label>
-            <select className="inp" id="category">
+            <select className="inp" id="catezgory">
                 <option value="">Select a Category</option>
                 <option value="Electronics">Electronics</option>
                 <option value="Clothes">Clothes</option>
