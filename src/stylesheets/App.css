@@ -15,6 +15,32 @@
     width: 100%;
 }
 
+.toggleButton {
+    background-color: #2b1001;
+    margin: 5px;
+    border: 1px solid #120000;
+    padding: 5px;
+    border-radius: 8px;
+    color: white;
+}
+
+.toggleButton:hover {
+    background-color: #5c3f04;
+}
+
+body.dark .nav{
+    background-color: #9a3905;
+    color: black;
+}
+body.dark .footer{
+    background-color: #ffffff;
+    color: #050525;
+}
+body.dark .body{
+    background-color: rgba(1, 37, 1, 0.54);
+    color: #4c0512;
+}
+
 .nav {
     background-color: rgba(87, 21, 21, 0.6);
     border-bottom: 7px solid #1c0606;

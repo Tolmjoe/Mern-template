@@ -8,6 +8,9 @@ import './stylesheets/App.css'
 
 
 function App() {
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark")
+    }
     return(
         <Router>
             <Routes>
