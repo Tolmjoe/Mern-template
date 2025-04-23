@@ -5,10 +5,21 @@ import RegisterPage from "./pages/register.jsx"
 import Admin from "./pages/admin.jsx"
 import Prodall from "./components/Prodall-page.jsx"
 import './stylesheets/App.css'
+import { useEffect} from "react";
+
 
 
 function App() {
-    return(
+    useEffect(() => {
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    }, []);
+
+    return (
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage/>} />
@@ -22,4 +33,4 @@ function App() {
     );
 }
 
-export default App
+export default App;
