@@ -1,3 +1,10 @@
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark")
+} else {
+    document.body.classList.remove("dark")
+}
+
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './stylesheets/index.css'
