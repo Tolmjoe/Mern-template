@@ -9,7 +9,7 @@ function Header() {
             <nav className="nav">
                 <div className="nav-block">
                     <div className="nav-logo">
-                        <span className="nav-logoa">Mern</span>
+                        <span className="nav-logoa">Oakrig</span>
                         <span className="nav-logob">Store</span>
                         </div>
                     <div
