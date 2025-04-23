@@ -109,7 +109,7 @@ function Products() {
         <div className="body-prod">
             <div className="back-shop">
                 <div className="back-text">
-                    <h1>Welcome to Mern Store</h1>
+                    <h1>Welcome to Oakrig Store</h1>
                     <p>You can buy quality products ranging from clothes, electronics, toys, and more</p>
                 </div>
             </div>

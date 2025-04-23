@@ -29,7 +29,7 @@
 }
 
 body.dark .nav{
-    background-color: #9a3905;
+    background-color: rgba(154, 57, 5, 0.9);
     color: black;
 }
 body.dark .footer{
@@ -37,7 +37,7 @@ body.dark .footer{
     color: #050525;
 }
 body.dark .body{
-    background-color: rgba(58, 48, 1, 0.59);
+    background-color: rgba(168, 110, 110, 0.59);
     color: #4c0512;
 }
 
