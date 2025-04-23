@@ -41,8 +41,8 @@ body.dark .body{
     color: #4c0512;
 }
 
-body.dark a:link{
-    color: #4c0512;
+body.dark a{
+    color: #4c0512 !important;
 }
 
 
