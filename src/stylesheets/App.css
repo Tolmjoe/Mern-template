@@ -41,6 +41,12 @@ body.dark .body{
     color: #4c0512;
 }
 
+body.dark a:link{
+    color: #4c0512;
+}
+
+
+
 .nav {
     background-color: rgba(87, 21, 21, 0.6);
     border-bottom: 7px solid #1c0606;
