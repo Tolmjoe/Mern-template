@@ -10,14 +10,14 @@
     font-weight: 600;
     cursor: pointer;
     color: #1e0101;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem;
     border-radius: 6px;
     border: 2px solid transparent;
     transition: background 0.2s;
     font-family:"Cambria Math", sans-serif ;
     margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 .acc-button:hover {
