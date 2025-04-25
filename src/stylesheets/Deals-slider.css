@@ -1,0 +1,28 @@
+.deal-section {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+.deal-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #3a0d0d;
+    padding-left: 0.6rem;
+}
+
+
+.deal-image {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: auto;
+}
+
+

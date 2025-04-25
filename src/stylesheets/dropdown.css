@@ -1,0 +1,77 @@
+.drop-wrapper {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.togclose, .togopen {
+    font-size: 43px;
+}
+
+
+.drop-toggle {
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+}
+
+.drop-toggle:hover {
+    background: none;
+}
+
+.drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 65vw;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1rem;
+}
+
+.drop-menu.open {
+    max-height: 800px;
+    padding: 1rem;
+}
+
+.drop-back {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.drop-section {
+    background: rgba(156, 111, 96, 0.11);
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.drop-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.drop-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drop-section li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.drop-section li:hover {
+    color: #bc0202;
+}

@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import DealsSlider from "../components/Deals-slider.jsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../stylesheets/Products.css";
+
+const hotDeals = ["/images/deals1.jpg", "/images/deals2.jpg", "/images/deals3.jpg"];
+const limitedStock = ["/images/deals4.jpg", "/images/deals5.jpg", "/images/deals6.jpg"];
+const flashSales = ["/images/deals7.jpg", "/images/deals8.jpg", "/images/deals9.jpg"];
 
 const product = [
     {
@@ -77,7 +82,11 @@ function Products() {
         electronics: ["/images/electron1.jpg", "/images/electron2.jpg", "/images/electron3.jpg"],
         clothes: ["/images/clothes1.jpg", "/images/clothes2.jpg", "/images/clothes3.jpg"],
         toys: ["/images/toys1.jpg", "/images/toys2.jpg", "/images/toys3.jpg"],
+        automobile: ["/images/autom1.jpg","/images/autom2.jpg","/images/autom3.jpg"],
+        fruits: ["/images/fruits1.jpg","/images/fruits3.jpg","/images/fruits3.jpg"],
+        crystals: ["/images/crys1.jpg","/images/crys2.jpg","/images/crys3.jpg"]
     };
+
 
     const setCarousel = {
         dots: true,
@@ -109,7 +118,7 @@ function Products() {
         <div className="body-prod">
             <div className="back-shop">
                 <div className="back-text">
-                    <h1>Welcome to Oakrig Store</h1>
+                    <h1>Welcome to Oakrigs Store</h1>
                     <p>You can buy quality products ranging from clothes, electronics, toys, and more</p>
                 </div>
             </div>
@@ -153,7 +162,50 @@ function Products() {
                         ))}
                     </Slider>
                 </div>
+
+                <div className="category-card">
+                    <div className="category-name">
+                        <h5>Automobile</h5>
+                    </div>
+                    <Slider {...setCarousel}>
+                        {slideImages.automobile.map((image, index) => (
+                            <div key={index}>
+                                <img width="100%" height="280" src={image} alt="Automobile" />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+
+                <div className="category-card">
+                    <div className="category-name">
+                        <h5>Fruits</h5>
+                    </div>
+                    <Slider {...setCarousel}>
+                        {slideImages.fruits.map((image, index) => (
+                            <div key={index}>
+                                <img width="100%" height="280" src={image} alt="Fruits" />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+
+                <div className="category-card">
+                    <div className="category-name">
+                        <h5>Crystals</h5>
+                    </div>
+                    <Slider {...setCarousel}>
+                        {slideImages.crystals.map((image, index) => (
+                            <div key={index}>
+                                <img width="100%" height="280" src={image} alt="Crystals" />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
             </div>
+            <DealsSlider title="🔥 Hot Deals" images={hotDeals} />
+            <DealsSlider title="⚠️ Limited Stock" images={limitedStock} />
+            <DealsSlider title="⚡ Flash Sale" images={flashSales} />
+
             <h5 className="productsHeading"> Latest Products</h5>
             <div className="products">
                 {products.map((product, index) => (
