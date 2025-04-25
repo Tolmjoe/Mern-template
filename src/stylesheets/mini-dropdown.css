@@ -31,16 +31,15 @@
     background: white;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     border-radius: 8px;
-    display: flex;
+    display: none;
     flex-direction: column;
     min-width: 150px;
     z-index: 1000;
     padding: 0.5rem 0;
-    opacity: 0;
 }
 
 .acc-menu.show {
-    opacity: 1;
+   display: flex;
 
 }
 
