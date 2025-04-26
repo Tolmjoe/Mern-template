@@ -11,7 +11,7 @@ function Footer(){
           <Link className="footlink" to="/">Job offers</Link>
           <Theme/>
           <br className="br"/>
-           &copy; 2025. Mern Commerce
+           &copy; 2025. Oakrigs Store
       </div>
       </>
     );
