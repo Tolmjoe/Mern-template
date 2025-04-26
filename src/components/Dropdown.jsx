@@ -17,7 +17,7 @@ const Drop = () => {
             <div className={`drop-menu ${open ? "open" : ""}`}>
                 <div className="drop-back">
                     <div className="drop-section">
-                        <h2>Users</h2>
+                        <h2>User</h2>
                         <ul>
                             <li>Wishlist</li>
                             <li>Orders</li>
@@ -45,7 +45,7 @@ const Drop = () => {
                         <ul>
                             <li>Customer Support</li>
                             <li>Download Mobile App</li>
-                            <li>Oakrig Bank</li>
+                            <li>Oakrigs Bank</li>
                         </ul>
                     </div>
                 </div>
