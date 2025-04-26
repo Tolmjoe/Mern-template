@@ -8,7 +8,7 @@
 .back-shop {
     margin-top: 14px;
     margin-bottom: 7px;
-    height: 300px;
+    height: 500px;
     background-image: url('../../public/images/store.jpg');
     background-size: cover;
     background-position: center;
@@ -18,7 +18,7 @@
 
 .back-text {
     width: 100%;
-    background-color: rgba(121, 144, 166, 0.76);
+    background-color: rgba(121, 144, 166, 0.91);
     padding: 10px;
     text-align: center;
 }
@@ -31,7 +31,7 @@
 
 .back-text p {
     margin-top: 5px;
-    color: #023306;
+    color: #001302;
 }
 
 .categories {
@@ -48,7 +48,7 @@
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    padding: 1rem;
+    padding: 0.2rem;
     background-color: #120101;
     color: white;
 }
@@ -85,14 +85,13 @@
 .slick-prev,
 .slick-next {
     z-index: 5;
-    width: 25px;
+    width: 46px;
 }
 
 .slick-prev:before,
 .slick-next:before {
-    font-size: 20px;
-    color: rgba(101, 23, 23, 0.66);
-    opacity: 1;
+    font-size: 22px;
+    color: rgb(58, 13, 13);
 }
 
 
@@ -202,14 +201,14 @@
 
 @media screen and (max-width: 768px) {
     .back-shop {
-        height: 180px;
+        height: 380px;
         background-position: center;
     }
 
 
     .category-card img {
         width: 100%;
-        height: auto;
+        height: 200px;
     }
 
     .products {
@@ -247,9 +246,15 @@
 }
 
 @media screen and (max-width: 480px) {
-    .category-card {
+    .category-card img {
         width: 100% !important;
+        height: 100px;
     }
+
+    .back-shop {
+        height: 330px;
+    }
+
 
     .back-text {
         padding: 12px;
