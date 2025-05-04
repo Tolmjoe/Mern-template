@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: #232f3e;
 }
 
 .back-shop {
@@ -18,20 +18,29 @@
 
 .back-text {
     width: 100%;
-    background-color: rgba(121, 144, 166, 0.91);
+    background-color: rgba(35, 47, 62, 0.95);
     padding: 10px;
     text-align: center;
+    color: #ffffff;
 }
 
+body.dark .back-text {
+    background-color: rgba(44, 21, 1, 0.99);
+}
+
+body.dark .back-text h1 {
+    color: #ffffff;
+}
 .back-text h1 {
     font-size: 28px;
     font-weight: bold;
     margin: 0;
+    color: #febd69;
 }
 
 .back-text p {
     margin-top: 5px;
-    color: #001302;
+    color: #d5dbdb;
 }
 
 .categories {
@@ -42,15 +51,18 @@
     padding: 0.1rem;
 }
 
-
 .category-card {
     width: calc(33% - 5px);
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 0.6rem;
-    background-color: #120101;
+    background-color: #232f3e;
     color: white;
+}
+
+body.dark .category-card {
+    background-color: #755002;
 }
 
 .category-card img {
@@ -75,11 +87,11 @@
 }
 .slick-dots li button:before {
     font-size: 8px;
-    color: rgb(177, 155, 161);
+    color: #d5dbdb;
     opacity: 0.6;
 }
 .slick-dots li.slick-active button:before {
-    color: #590211;
+    color: #febd69;
     opacity: 1;
 }
 
@@ -92,13 +104,13 @@
 .slick-prev:before,
 .slick-next:before {
     font-size: 22px;
-    color: rgb(58, 13, 13);
+    color: #232f3e;
 }
-
 
 .category-name {
     padding: 3px;
     font-weight: 600;
+    color: white;
 }
 
 .products {
@@ -112,10 +124,11 @@
 .productsHeading {
     color: white;
     text-align: center;
-    background-color: rgba(57, 22, 22, 0.46);
+    background-color: #232f3e;
     padding: 10px;
     font-family: "Felix Titling", sans-serif;
 }
+
 .product-card {
     background: white;
     border: 1px solid #ddd;
@@ -139,43 +152,45 @@
 .product-card h3 {
     font-size: 16px;
     margin-bottom: 5px;
+    color: #232f3e;
 }
 
 .stars {
-    color: #ffc107;
+    color: #ffa41c;
     margin-bottom: 5px;
 }
 
 .price {
     font-weight: 549;
     margin-bottom: 10px;
+    color: #b12704;
 }
 
 .discount {
     margin-left: 10px;
     font-size: 9px;
-    background-color: rgba(205, 174, 174, 0.29);
+    background-color: rgba(255, 193, 7, 0.15);
     border: 1px solid transparent;
     border-radius: 50%;
     font-weight: bold;
-    color: #a80606;
+    color: #b12704;
 }
 
 .product-card button {
-    background-color: #f6ce02;
+    background-color: #febd69;
     border: none;
     padding: 8px 15px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
+    color: #111;
 }
 
 .product-card button:hover {
-    background-color: #403402;
-    color: whitesmoke;
+    background-color: #f3a847;
+    color: black;
     transition: background-color 0.2s ease;
 }
-
 
 .adminA {
     background-color: rgba(255, 0, 0, 0.6) !important;
@@ -185,27 +200,21 @@
 .adminB {
     background-color: rgba(128, 0, 128, 0.62) !important;
     margin-left: 3px;
-
 }
 
 .adminS {
     background-color: black !important;
     color: white;
     margin-left: 3px;
-
 }
 
-
-
-
-/*resp*/
+/* resp */
 
 @media screen and (max-width: 768px) {
     .back-shop {
         height: 380px;
         background-position: center;
     }
-
 
     .category-card img {
         width: 100%;
@@ -252,13 +261,12 @@
         height: 100px;
     }
     .category-card {
-        padding:12px;
+        padding: 12px;
     }
 
     .back-shop {
         height: 330px;
     }
-
 
     .back-text {
         padding: 12px;
@@ -288,7 +296,7 @@
         font-size: 13px;
     }
     .category-name h5 {
-        font-size:13px;
+        font-size: 13px;
     }
 
     .stars {
@@ -299,8 +307,3 @@
         font-size: 7px;
     }
 }
-
-
-
-
-

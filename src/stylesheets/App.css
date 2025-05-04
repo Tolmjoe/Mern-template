@@ -7,7 +7,7 @@
 
 .body {
     background-color: rgba(255, 255, 255, 0.7);
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,9 +16,9 @@
 }
 
 .toggleButton {
-    background-color: #2b1001;
+    background-color: #131921;
     margin: 5px;
-    border: 1px solid #120000;
+    border: 1px solid #0f1111;
     padding: 6px;
     border-radius: 6px;
     color: white;
@@ -26,54 +26,55 @@
 }
 
 .toggleButton:hover {
-    background-color: #5c3f04;
+    background-color: #232f3e;
 }
 
-body.dark .nav{
-    background-color: rgba(154, 57, 5, 0.9);
+body.dark .nav {
+    background-color: #6c4302;
     color: black;
 }
-body.dark .footer{
-    background-color: #ffffff;
-    color: #050525;
+body.dark .footer {
+    background-color: #6c4302;
+    color: #ffffff;
 }
-body.dark .body{
-    background-color: rgba(168, 110, 110, 0.59);
-    color: #4c0512;
+body.dark .body {
+    background-color: rgba(255, 247, 235, 0.98);
+    color: #111;
 }
-
-body.dark .adm{
-    background-color: rgba(30, 25, 1, 0.49);
+body.dark .adm {
+    background-color: rgba(255, 255, 255, 0.9);
 }
-
-body.dark .adminButton{
-    background-color: rgba(14, 0, 0, 0.59);
+body.dark .adminButton {
+    background-color: rgba(255, 153, 0, 0.75);
 }
-
-body.dark .register-form{
-    background-color: rgba(4, 0, 0, 0.34);
+body.dark .register-form {
+    background-color: rgba(255, 255, 255, 0.95);
 }
-
-body.dark .login-form{
-    background-color: rgba(4, 0, 0, 0.34);
+body.dark .login-form {
+    background-color: rgba(255, 255, 255, 0.95);
 }
-
-body.dark .labelLog{
-    background-color: rgba(1, 39, 1, 0.49);
+body.dark .labelLog {
+    background-color: rgba(255, 153, 0, 0.9);
 }
-
-body.dark .register{
-    background-color: rgba(1, 39, 1, 0.49);
+body.dark .register {
+    background-color: rgba(255, 153, 0, 0.9);
 }
-body.dark a{
-    color: #4c0512 !important;
+body.dark a {
+    color: rgba(0, 0, 0, 0.7) !important;
 }
 
+body.dark .backtext {
+    background-color: #4c0512;
+}
+
+body.dark .toggleButton {
+    background-color: rgba(1, 16, 2, 0.49);
+}
 
 
 .nav {
-    background-color: rgba(87, 21, 21, 0.6);
-    border-bottom: 7px solid #1c0606;
+    background-color: #232f3e;
+    border-bottom: 7px solid #febd69;
     padding: 1px 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     position: sticky;
@@ -96,12 +97,12 @@ body.dark a{
 }
 
 .nav-logoa {
-    color: #251001;
+    color: #febd69;
     font-size: 2.5rem;
 }
 
 .nav-logob {
-    color: #25010e;
+    color: white;
     font-size: 3.9rem;
 }
 
@@ -124,8 +125,8 @@ body.dark a{
 }
 
 .nav-link:hover {
-    background-color: rgba(46, 46, 38, 0.37);
-    color: rgba(1, 16, 2, 0.98);
+    background-color: rgba(255, 153, 0, 0.25);
+    color: #131921;
     transition: 0.1s ease;
 }
 
@@ -134,16 +135,16 @@ body.dark a{
 a:link {
     font-family: "Poor Richard", "Felix Titling", sans-serif;
     text-decoration: none;
-    color: rgb(35, 25, 1);
+    color: #0f1111;
 }
 
 a:visited {
-    color: rgb(12, 0, 0);
+    color: #232f3e;
 }
 
 
 .body {
-    background-color: rgba(0, 3, 16, 0.81);
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 14px;
     min-height: 100vh;
     font-family: "Century Schoolbook","Times New Roman",serif;
@@ -151,38 +152,38 @@ a:visited {
 
 
 .hub {
-    color: #ffffff;
+    color: #0f1111;
     font-family: "Lucida Handwriting", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
 }
 
 .hub:hover {
-    color: darkkhaki;
+    color: #febd69;
 }
 
 .sublink {
     display: inline;
     border-radius: 1px;
-    color: white;
+    color: #232f3e;
 }
 
 .sublink:link {
-    color: white;
+    color: #232f3e;
     padding: 1px;
 }
 
 .sublink:visited{
-    color: #b9dadc;
+    color: #232f3e;
 }
 
 .sublink:hover {
-   color: #9a7d05;
+    color: #febd69;
 }
 
 
 
 
 .footer {
-    background-color: black;
+    background-color: #131921;
     height: 110px;
     position: relative;
     bottom: 0;
@@ -198,10 +199,10 @@ a:visited {
     margin-left: 7px;
 }
 .footlink:visited {
-    color: #ac9610;
+    color: #febd69;
 }
 .footlink:hover {
-    color: aqua;
+    color: #ff9900;
 }
 
 .footlink:active {
@@ -220,7 +221,7 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.54);
+    background-color: rgba(242, 243, 243, 0.95);
     padding: 8px;
     border-radius: 15px;
 }
@@ -240,7 +241,7 @@ a:visited {
 
 label {
     font-size: 14px;
-    color: #555;
+    color: #0f1111;
     margin-bottom: 5px;
     font-weight: 500;
 }
@@ -251,22 +252,22 @@ label {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #f3f3f3;
     transition: 0.3s ease;
     font-size: 15px;
 }
 
 input:focus {
     outline: none;
-    border-color: rgba(9, 1, 23, 0.96);
-    box-shadow: 0 0 0 3px rgba(126, 87, 194, 0.15);
-    background-color: rgba(7, 32, 78, 0.35);
+    border-color: #febd69;
+    box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.15);
+    background-color: #fafafa;
 }
 
 
 .labelLog, .register {
-    background-color: black;
-    color: white;
+    background-color: #febd69;
+    color: #0f1111;
     font-weight: bold;
     padding: 12px;
     border: none;
@@ -278,7 +279,7 @@ input:focus {
 }
 
 .labelLog:hover, .register:hover {
-    background-color: rgba(0, 0, 0, 0.52);
+    background-color: #f3a847;
 }
 
 
@@ -286,21 +287,21 @@ input:focus {
     text-align: center;
     display: block;
     margin-top: 20px;
-    color: #f3eded;
+    color: #232f3e;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.62);
+    background-color: #febd69;
     padding: 9px;
 }
 
 .loginRet:hover, .registerRet:hover {
-    color: #0c0000;
-    background-color: white;
+    color: white;
+    background-color: #232f3e;
 }
 
 .loginRet:visited, .registerRet:visited {
-    color: #d5725c;
+    color: #f08804;
 }
 
 .menumob {
@@ -332,7 +333,7 @@ input:focus {
     .nav-link {
         text-align: left;
         width: 100%;
-        background-color: rgba(195, 153, 153, 0.49);
+        background-color: rgba(255, 193, 7, 0.49);
         margin-left: 9px;
         border-radius: 0;
         font-size: 20px;
@@ -352,7 +353,7 @@ input:focus {
     .nav-menu {
         display: none;
         flex-direction: column;
-        background-color: rgba(166, 112, 112, 0.95);
+        background-color: #232f3e;
         width: 100%;
     }
 
@@ -399,16 +400,16 @@ input:focus {
     float: right;
     margin-right: 5px;
     width: 200px; height: 35px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ccc;
     border-radius: 6px;
     padding-left: 10px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .searchBack {
-    background-color: #201301;
+    background-color: #febd69;
     height: 40px;
     margin-bottom: 1px;
-    color: white;
+    color: #0f1111;
 }

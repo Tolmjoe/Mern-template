@@ -1,21 +1,27 @@
 .deal-section {
     max-width: 100%;
-
     padding: 0.8rem;
-    background: #f9f9f9;
+    background: #f3f4f6;
     border-radius: 10px;
     margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
-
 
 .deal-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 0.3rem;
-    color: #ffffff;
+    color: #232f3e;
     padding: 0.4rem;
-    background-color: #1e0101;
+    background-color: #febd69;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
 }
 
+body.dark .deal-title {
+    background-color: #2c1e01;
+    color: white;
+}
 
 .deal-image {
     width: 100%;
@@ -24,4 +30,6 @@
     object-fit: cover;
     border-radius: 8px;
     margin: auto;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }

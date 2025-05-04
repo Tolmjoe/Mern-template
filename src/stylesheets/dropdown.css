@@ -47,7 +47,7 @@
 }
 
 .drop-section {
-    background: rgba(156, 111, 96, 0.11);
+    background: rgba(245, 245, 245, 0.95);
     padding: 0.8rem;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -56,6 +56,7 @@
 .drop-section h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: #232f3e;
 }
 
 .drop-section ul {
@@ -68,10 +69,10 @@
     margin-bottom: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
-    color: #333;
+    color: #111;
     transition: color 0.2s;
 }
 
 .drop-section li:hover {
-    color: #bc0202;
+    color: #febd69;
 }
