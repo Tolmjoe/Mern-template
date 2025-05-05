@@ -18,7 +18,7 @@
 
 .back-text {
     width: 100%;
-    background-color: rgba(35, 47, 62, 0.95);
+    background-color: rgb(129, 147, 168);
     padding: 10px;
     text-align: center;
     color: #ffffff;
@@ -35,12 +35,12 @@ body.dark .back-text h1 {
     font-size: 28px;
     font-weight: bold;
     margin: 0;
-    color: #febd69;
+    color: #1e1101;
 }
 
 .back-text p {
     margin-top: 5px;
-    color: #d5dbdb;
+    color: #011c1c;
 }
 
 .categories {
@@ -57,8 +57,8 @@ body.dark .back-text h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 0.6rem;
-    background-color: #232f3e;
-    color: white;
+    background-color: #cbd3dd;
+    color: #000000 !important;
 }
 
 body.dark .category-card {
@@ -110,7 +110,7 @@ body.dark .category-card {
 .category-name {
     padding: 3px;
     font-weight: 600;
-    color: white;
+    color: #120101;
 }
 
 .products {
@@ -122,9 +122,9 @@ body.dark .category-card {
 }
 
 .productsHeading {
-    color: white;
+    color: #100000;
     text-align: center;
-    background-color: #232f3e;
+    background-color: #7a99bf;
     padding: 10px;
     font-family: "Felix Titling", sans-serif;
 }

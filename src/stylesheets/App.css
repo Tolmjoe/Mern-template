@@ -183,7 +183,7 @@ a:visited {
 
 
 .footer {
-    background-color: #131921;
+    background-color: #2c394c;
     height: 110px;
     position: relative;
     bottom: 0;
@@ -408,7 +408,7 @@ input:focus {
 }
 
 .searchBack {
-    background-color: #febd69;
+    background-color: rgba(254, 189, 105, 0.78);
     height: 40px;
     margin-bottom: 1px;
     color: #0f1111;
