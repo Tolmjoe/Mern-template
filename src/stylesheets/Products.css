@@ -18,7 +18,7 @@
 
 .back-text {
     width: 100%;
-    background-color: rgb(129, 147, 168);
+    background-color: rgb(180, 192, 207);
     padding: 10px;
     text-align: center;
     color: #ffffff;
@@ -31,6 +31,9 @@ body.dark .back-text {
 body.dark .back-text h1 {
     color: #ffffff;
 }
+body.dark .back-text p {
+    color: #ffffff;
+}
 .back-text h1 {
     font-size: 28px;
     font-weight: bold;
@@ -40,7 +43,7 @@ body.dark .back-text h1 {
 
 .back-text p {
     margin-top: 5px;
-    color: #011c1c;
+    color: #000000;
 }
 
 .categories {
