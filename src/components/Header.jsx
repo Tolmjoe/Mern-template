@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { useState, useRef, useEffect } from "react";
 import Drop from "../components/Dropdown.jsx";
 import "../stylesheets/mini-dropdown.css"
+import Search from "./Search-products.jsx";
 
 function Header() {
     const [accountOpen, setAccountOpen] = useState(false);
@@ -18,7 +19,7 @@ function Header() {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
-    return (
+    return (  
         <>
             <nav className="nav">
                 <div className="nav-block">
@@ -28,6 +29,8 @@ function Header() {
                         <span className="nav-logoa">OAKRIGS</span>
                         <span className="nav-logob">Store</span>
                     </div>
+                   
+                    <Search/>
 
                     <div className="acc-dropdown" ref={dropdownRef}>
                         <button className="acc-button" onClick={() => setAccountOpen(!accountOpen)}>

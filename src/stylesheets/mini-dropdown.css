@@ -5,14 +5,16 @@
 }
 
 .acc-button {
-    background: rgba(34, 1, 1, 0.26);
-    font-size: 1rem;
+    background: #353333;
+    background:linear-gradient(#35333345,#121212
+    ); 
+    font-size: .8rem;
     font-weight: 600;
     cursor: pointer;
-    color: #cfbbbb;
-    padding: 0.3rem;
+    color: #fff;;
+    padding: 0.8rem; 
     border-radius: 6px;
-    border: 2px solid transparent;
+
     transition: background 0.2s;
     font-family:"Cambria Math", sans-serif ;
     margin-top: 10%;
@@ -21,7 +23,7 @@
 }
 
 .acc-button:hover {
-    background: rgba(213, 151, 101, 0.29);
+    background: black;
 }
 
 .acc-menu {

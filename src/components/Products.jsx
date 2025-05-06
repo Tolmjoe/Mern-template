@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../stylesheets/Products.css";
 
-const hotDeals = ["/images/deals1.jpg", "/images/deals2.jpg", "/images/deals3.jpg"];
-const limitedStock = ["/images/deals4.jpg", "/images/deals5.jpg", "/images/deals6.jpg"];
-const flashSales = ["/images/deals7.jpg", "/images/deals8.jpg", "/images/deals9.jpg"];
+// const hotDeals = ["/images/deals1.jpg", "/images/deals2.jpg", "/images/deals3.jpg"];
+// const limitedStock = ["/images/deals4.jpg", "/images/deals5.jpg", "/images/deals6.jpg"];
+// const flashSales = ["/images/deals7.jpg", "/images/deals8.jpg", "/images/deals9.jpg"];
 
 const product = [
     {
@@ -79,12 +79,12 @@ function Products() {
     };
 
     const slideImages = {
-        electronics: ["/images/electron1.jpg", "/images/electron2.jpg", "/images/electron3.jpg"],
-        clothes: ["/images/clothes1.jpg", "/images/clothes2.jpg", "/images/clothes3.jpg"],
-        toys: ["/images/toys1.jpg", "/images/toys2.jpg", "/images/toys3.jpg"],
-        automobile: ["/images/autom1.jpg","/images/autom2.jpg","/images/autom3.jpg"],
-        fruits: ["/images/fruits1.jpg","/images/fruits3.jpg","/images/fruits3.jpg"],
-        crystals: ["/images/crys1.jpg","/images/crys2.jpg","/images/crys3.jpg"]
+        electronics: ["../../images/electron1.jpg", "../../images/electron2.jpg", "../../images/electron3.jpg"],
+        clothes: ["../../images/clothes1.jpg", "../../images/clothes2.jpg", "../../images/clothes3.jpg"],
+        toys: ["../../images/toys1.jpg", "../../images/toys2.jpg", "../../images/toys3.jpg"],
+        automobile: ["../../images/autom1.jpg", "../../images/autom2.jpg", "../../images/autom3.jpg"],
+        // fruits: ["/images/fruits1.jpg", "/images/fruits3.jpg", "/images/fruits3.jpg"],
+        // crystals: ["/images/crys1.jpg", "/images/crys2.jpg", "/images/crys3.jpg"]
     };
 
 
@@ -114,20 +114,17 @@ function Products() {
         ],
     };
 
+
     return (
         <div className="body-prod">
-            <div className="back-shop">
-                <div className="back-text">
-                    <h1>Welcome to Oakrigs Store</h1>
-                    <p>You can buy quality products ranging from clothes, electronics, toys, and more</p>
-                </div>
-            </div>
+
 
             <div className="categories">
                 <div className="category-card">
                     <div className="category-name">
                         <h5>Electronics</h5>
                     </div>
+
                     <Slider {...setCarousel}>
                         {slideImages.electronics.map((image, index) => (
                             <div key={index}>
@@ -135,7 +132,12 @@ function Products() {
                             </div>
                         ))}
                     </Slider>
+
                 </div>
+
+
+
+
 
                 <div className="category-card">
                     <div className="category-name">
@@ -163,7 +165,7 @@ function Products() {
                     </Slider>
                 </div>
 
-                <div className="category-card">
+                {/* <div className="category-card">
                     <div className="category-name">
                         <h5>Automobile</h5>
                     </div>
@@ -174,9 +176,9 @@ function Products() {
                             </div>
                         ))}
                     </Slider>
-                </div>
+                </div> */}
 
-                <div className="category-card">
+                {/* <div className="category-card">
                     <div className="category-name">
                         <h5>Fruits</h5>
                     </div>
@@ -187,9 +189,9 @@ function Products() {
                             </div>
                         ))}
                     </Slider>
-                </div>
+                </div> */}
 
-                <div className="category-card">
+                {/* <div className="category-card">
                     <div className="category-name">
                         <h5>Crystals</h5>
                     </div>
@@ -200,14 +202,17 @@ function Products() {
                             </div>
                         ))}
                     </Slider>
-                </div>
+                </div> */}
             </div>
-            <DealsSlider title="🔥 Hot Deals" images={hotDeals} />
-            <DealsSlider title="⚠️ Limited Stock" images={limitedStock} />
-            <DealsSlider title="⚡ Flash Sale" images={flashSales} />
 
-            <h5 className="productsHeading"> Latest Products</h5>
-            <div className="products">
+
+
+            {/* <DealsSlider title="🔥 Hot Deals" images={hotDeals} />
+            <DealsSlider title="⚠️ Limited Stock" images={limitedStock} />
+            <DealsSlider title="⚡ Flash Sale" images={flashSales} /> */}
+
+            {/* <h5 className="productsHeading"> Latest Products</h5> */}
+            {/* <div className="products">
                 {products.map((product, index) => (
                     <div key={index} className="product-card">
                        <Link to={`/product/${product.id}`}><img src={product.image} alt={product.name} />
@@ -255,7 +260,7 @@ function Products() {
                         )}
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }

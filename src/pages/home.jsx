@@ -6,7 +6,7 @@ import Body from "./body.jsx";
 function HomePage() {
     return(
         <>
-        <Header/>
+        {/* <Header/> */}
             <Body/>
             <Footer/>
         </>

@@ -1,50 +1,14 @@
 .body-prod {
-    width: 100%;
-    height: 100%;
+    min-width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #232f3e;
 }
 
-.back-shop {
-    margin-top: 14px;
-    margin-bottom: 7px;
-    height: 500px;
-    background-image: url('../../public/images/store.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-}
 
-.back-text {
-    width: 100%;
-    background-color: rgb(180, 192, 207);
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
-}
 
-body.dark .back-text {
-    background-color: rgba(44, 21, 1, 0.99);
-}
-
-body.dark .back-text h1 {
-    color: #ffffff;
-}
-body.dark .back-text p {
-    color: #ffffff;
-}
-.back-text h1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0;
-    color: #1e1101;
-}
-
-.back-text p {
-    margin-top: 5px;
-    color: #000000;
-}
 
 .categories {
     display: flex;
@@ -60,10 +24,10 @@ body.dark .back-text p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 0.6rem;
-    background-color: #cbd3dd;
+    background-color: #f08a042a;
     color: #000000 !important;
 }
-
+ 
 body.dark .category-card {
     background-color: #755002;
 }
@@ -77,9 +41,11 @@ body.dark .category-card {
 .slick-slide {
     transition: all 0.5s ease-in-out;
 }
+
 .slick-slide img {
     opacity: 0.8;
 }
+
 .slick-current img {
     opacity: 1;
     transform: scale(1.23);
@@ -88,11 +54,13 @@ body.dark .category-card {
 .slick-dots {
     bottom: 1px;
 }
+
 .slick-dots li button:before {
     font-size: 8px;
     color: #d5dbdb;
     opacity: 0.6;
 }
+
 .slick-dots li.slick-active button:before {
     color: #febd69;
     opacity: 1;
@@ -263,6 +231,7 @@ body.dark .category-card {
         width: 100% !important;
         height: 100px;
     }
+
     .category-card {
         padding: 12px;
     }
@@ -298,6 +267,7 @@ body.dark .category-card {
     .product-card button {
         font-size: 13px;
     }
+
     .category-name h5 {
         font-size: 13px;
     }

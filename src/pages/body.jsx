@@ -1,20 +1,32 @@
-import {Link} from "react-router";
+import { Link } from "react-router";
 import Products from "../components/Products.jsx";
-import Search from "../components/Search-products.jsx";
+import Header from "../components/Header.jsx";
+
 
 function Body() {
     return (
         <>
-           <div className="searchBack"> <Search/> </div>
-        <div className="body">
-            <p className="introText">Oakrigs Store is your Number One <span className="hub">HUB</span> in buying all things green!
-            <Link className="sublink" to="/register">Register</Link> and shop with us today to get a 70% discount off your first purchase!
-            </p>
-                <hr/>
-            <Products/>
+
+            <div className="">
 
 
-        </div>
+                <div className="header">
+                    <Header />
+                </div>
+
+                <p className="intro">Your Number One <span className="hub">HUB</span> in buying all things green!
+                    <Link className="sublink" to="/register">Register</Link> and shop with us today.
+                </p>
+
+            </div>
+
+
+
+
+
+            <Products />
+
+
         </>
     );
 }
