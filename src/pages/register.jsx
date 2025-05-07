@@ -1,4 +1,6 @@
 import {Link} from "react-router";
+import "../stylesheets/login-register.css"
+
 
 function registerPage() {
     return (

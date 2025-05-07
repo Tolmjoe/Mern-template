@@ -1,0 +1,96 @@
+.login-body,
+.register-body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(242, 243, 243, 0.95);
+    padding: 8px;
+    border-radius: 15px;
+}
+
+
+.login-form,
+.register-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    font-size: 14px;
+    color: #0f1111;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputLogin,
+.inputRegister {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #febd69;
+    box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.15);
+    background-color: #fafafa;
+}
+
+
+.labelLog,
+.register {
+    background-color: #febd69;
+    color: #0f1111;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.labelLog:hover,
+.register:hover {
+    background-color: #f3a847;
+}
+
+
+.loginRet,
+.registerRet {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #232f3e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    background-color: #febd69;
+    padding: 9px;
+}
+
+.loginRet:hover,
+.registerRet:hover {
+    color: white;
+    background-color: #232f3e;
+}
+
+.loginRet:visited,
+.registerRet:visited {
+    color: #f08804;
+}

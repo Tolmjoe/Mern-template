@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import Theme from "./Theme-togg.jsx"
+import "../stylesheets/Footer.css"
 
 function Footer(){
     return (

@@ -5,16 +5,15 @@
 }
 
 .acc-button {
-    background: #353333;
-    background:linear-gradient(#35333345,#121212
-    ); 
+    background: #fef6e4;
+    color: #4b2e0c;
     font-size: .8rem;
     font-weight: 600;
     cursor: pointer;
-    color: #fff;;
-    padding: 0.8rem; 
+    padding: 11px;
     border-radius: 6px;
-
+    outline: none;
+    border: 1px solid transparent;
     transition: background 0.2s;
     font-family:"Cambria Math", sans-serif ;
     margin-top: 10%;
@@ -29,13 +28,13 @@
 .acc-menu {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -10px;
     background: white;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     border-radius: 8px;
     display: none;
     flex-direction: column;
-    min-width: 150px;
+    min-width: 105px;
     z-index: 1000;
     padding: 0.5rem 0;
 }

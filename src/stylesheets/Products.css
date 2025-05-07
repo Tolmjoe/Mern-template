@@ -22,14 +22,17 @@
     width: calc(33% - 5px);
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c2a3b5;
     border-radius: 12px;
-    padding: 0.6rem;
-    background-color: #f08a042a;
-    color: #000000 !important;
+    padding: 0.4rem;
+    background-color: rgba(44, 27, 46, 0.27);
+    color: #4b1e3f;
 }
  
 body.dark .category-card {
-    background-color: #755002;
+    background-color: #3b9c9c;
+    color: #fdf6ec !important;
+    border-color: #2f4f4f;
 }
 
 .category-card img {
@@ -93,11 +96,17 @@ body.dark .category-card {
 }
 
 .productsHeading {
-    color: #100000;
+    color: #f6f4f4;
     text-align: center;
-    background-color: #7a99bf;
-    padding: 10px;
+    background: linear-gradient(135deg, #110a12, rgba(30, 30, 30, 0.96));
+    padding: 8px;
     font-family: "Felix Titling", sans-serif;
+    border: 1px solid transparent;
+    border-radius: 9px;
+}
+
+body.dark .productsHeading {
+    background: linear-gradient(to right, #0b2223, rgba(30, 75, 75, 0.91));
 }
 
 .product-card {

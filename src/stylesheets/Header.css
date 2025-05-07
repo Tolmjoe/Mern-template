@@ -1,0 +1,94 @@
+.nav {
+    padding: 1px 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #2c1b2e, #1e1e1e);
+    height: 150px;
+}
+
+body.dark .nav {
+    background: linear-gradient(to left, #122e30, #1e4b4b, #276c6c);
+}
+.nav-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*Not used*/
+/*.nav-overlay {*/
+
+/*    content: "";*/
+/*    position: absolute;*/
+/*    !* background: whitesmoke; *!*/
+/*    !* background-color: crimson; *!*/
+/*    !* */
+/*    background:linear-gradient(#f08a041e,#f08a04d3*/
+/*    ); *!*/
+/*    width: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    z-index: -4;*/
+
+/*}*/
+
+.navup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 1rem;
+    flex-wrap: nowrap;
+}
+
+.navdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav-logo {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logoa {
+    color: #febd69;
+    font-size: 2.5rem;
+}
+
+.nav-logob {
+    color: white;
+    font-size: 3.9rem;
+}
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 153, 0, 0.25);
+    color: #131921;
+    transition: 0.1s ease;
+}
