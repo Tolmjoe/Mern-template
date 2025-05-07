@@ -41,7 +41,7 @@ body.dark .nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 11px;
+    gap: 10px;
     margin-bottom: 1rem;
     flex-wrap: nowrap;
 }
