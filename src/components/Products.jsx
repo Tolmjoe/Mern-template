@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import DealsSlider from "../components/Deals-slider.jsx";
@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../stylesheets/Products.css";
 
-// const hotDeals = ["/images/deals1.jpg", "/images/deals2.jpg", "/images/deals3.jpg"];
-// const limitedStock = ["/images/deals4.jpg", "/images/deals5.jpg", "/images/deals6.jpg"];
-// const flashSales = ["/images/deals7.jpg", "/images/deals8.jpg", "/images/deals9.jpg"];
+const hotDeals = ["/images/deals11.jpg", "/images/deals21.jpg", "/images/deals3.jpg"];
+const limitedStock = ["/images/deals41.jpg", "/images/deals51.jpg", "/images/deals6.jpg"];
+const flashSales = ["/images/deals71.jpg", "/images/deals81.jpg", "/images/deals9.jpg"];
 
 const product = [
     {
